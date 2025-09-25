@@ -636,23 +636,25 @@ iffe(used on the spot) -> fixes global variable pollution(unused varible warning
 	3. operators : 
 	4. iteration(loops)
 	5. switch
-	6. deep/shallow copy
+	6. deep/shallow copy 
+	   
+	   to do: JS switch questions
 	
 day15
-	2. rust args(multiple argument handling)/ layer-wise de-structuring of API
-	3. spreading an argument/ rust parameter
-	4. scoping (global, function and block)
+	7. rust args(multiple argument handling)/ layer-wise de-structuring of API
+	8. spreading an argument/ rust parameter
+	9. scoping (global, function and block)
 	    reference error, block scope (var is a function-scoped), local, lexical(hierarchal) environment scoping, scope-chaining
 	5.closure(very imp): (phenomena) combination of a function & lexical environment within which the function was declared, it creates an instance, which bypasses mark and sweep (GEC is must in this type of problem, do the GEC on paper)
-	6. callback function - passed as an argument inside another function, that can be called later, used for async programming. functions that recieve a callback function are known as higher-order function.
-	 7. idea-feasibility (ex- ordering an article)
-	 8. IOC (Inversion Of Control) 
+	10. callback function - passed as an argument inside another function, that can be called later, used for async programming. functions that recieve a callback function are known as higher-order function.
+	 11. idea-feasibility (ex- ordering an article)
+	 12. IOC (Inversion Of Control) 
 		(modular programming approach - to check if each function in heirarchy is working correctly)
 		problem 1: passing function, if an function doesn't run in its intented manner, the entire layout collapses, forming a callback-hell (used example- cooking noodles)
-	9. Pyramid of doom - callback-hell, it is a complex structure that is difficult to read, analyze and debug, FIX: Attaching of function
-	10. attaching a function (promises) {just the intro and requirement} - every async task returns a promise, initializing a promise initiates a promise state, two cases - (i) fulfilled (ii) rejected -> in either case, output is recieved. when fulfilled use *.then* when rejected use .catch -> .finally (end of task)
-	11. typeofFunction
-	12. immediate invoke function expression (iffe)
+	13. Pyramid of doom - callback-hell, it is a complex structure that is difficult to read, analyze and debug, FIX: Attaching of function
+	14. attaching a function (promises) {just the intro and requirement} - every async task returns a promise, initializing a promise initiates a promise state, two cases - (i) fulfilled (ii) rejected -> in either case, output is recieved. when fulfilled use *.then* when rejected use .catch -> .finally (end of task)
+	15. typeofFunction
+	16. immediate invoke function expression (iffe)
 	
 	for interview: define scope-chaining.(parent and child are bound together, these boundings are known as closure) closure ( 2-button chain-problem ) . implementation of closure
 	how to write an HOF (array.prototype)
@@ -705,4 +707,33 @@ JS conference channel -> eventloop JS conf -> loupe js(visualizer)
 For interview -> async nature comes due to nodeJS
 
 **DAY21**
-Local storage vs session storage (refer GFG's site difference table)
+1. Local storage vs session storage (refer GFG's site difference table)
+2.  Optimization techniques : debouncing and throttle
+	ex-request-response cycle with minimum delay breaks if something is changed(debouncing-> interval )
+		throttle -> limits the rate leading to  resource efficiency -> ex- yt live stream chat
+			it needs last call and current call. if difference is equal to greater than the interval, it is allowed, else it is rejected
+			(define , use-case, and implementation)
+3. load balancer : smartly manages the resource to maintain the requests. first : uses - round robin. second : waited-round-robin third: least connection(explain these algos)
+
+
+JS is done(idk shit)
+
+**REACT :**
+![[Pasted image 20250925094402.png]] Node JS environment
+
+when writing server-side scripting, we borrowed some functionalities of C++ called livuv.
+to manage OS -> module(piece of code that that solves a problem)
+module , fs module, os-module, path-module, npm
+
+npm(node package manager)
+ex - carrot-versioning of a package
+
+HOW IS A NODE APPLICATION MADE?
+node --watch index.js
+gitignore - contains node module, used to remove the node packages, to reduce the size of project while uploading
+react - doesn't own anything. framework cuz it has everything, library cuz borrows everything.
+
+figlet package
+import figlet from 'figlet'
+
+task: TTS coverter

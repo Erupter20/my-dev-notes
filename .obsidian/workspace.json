@@ -4,76 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "552265131a244f6b",
-        "type": "split",
+        "id": "12fc08ae529c7be8",
+        "type": "tabs",
         "children": [
           {
-            "id": "12fc08ae529c7be8",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "e040b22c3c60764d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "class notes/class notes.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "class notes"
-                }
-              }
-            ]
-          },
-          {
-            "id": "ac49738d7e951da5",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "f963d5aa0070ad91",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "terminal:terminal",
-                  "state": {
-                    "terminal:terminal": {
-                      "cwd": "E:\\dev\\Notes\\dev_notes",
-                      "focus": false,
-                      "profile": {
-                        "args": [],
-                        "executable": "C:\\Windows\\System32\\cmd.exe",
-                        "name": "",
-                        "platforms": {
-                          "win32": true
-                        },
-                        "pythonExecutable": "python3",
-                        "restoreHistory": false,
-                        "rightClickAction": "copyPaste",
-                        "successExitCodes": [
-                          "0",
-                          "SIGINT",
-                          "SIGTERM"
-                        ],
-                        "terminalOptions": {
-                          "documentOverride": null
-                        },
-                        "type": "integrated",
-                        "useWin32Conhost": true
-                      },
-                      "serial": null
-                    }
-                  },
-                  "pinned": true,
-                  "icon": "terminal",
-                  "title": "Terminal: C:\\Windows\\System32\\conhost.exe"
-                }
-              }
-            ]
+            "id": "e040b22c3c60764d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "class notes/class notes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "class notes"
+            }
           }
-        ],
-        "direction": "horizontal"
+        ]
       }
     ],
     "direction": "vertical"
@@ -235,8 +183,9 @@
       "terminal:Open terminal": false
     }
   },
-  "active": "f963d5aa0070ad91",
+  "active": "e040b22c3c60764d",
   "lastOpenFiles": [
+    "Pasted image 20250925094402.png",
     "class notes/class notes.md",
     "Untitled 1.md",
     "Untitled.md",
@@ -263,7 +212,6 @@
     "refined notes/04 - JavaScript/07 - Advanced (Prototypes, Inheritance, HOF, Currying).md",
     "refined notes/04 - JavaScript/06 - DOM & BOM.md",
     "refined notes/04 - JavaScript/05 - Async Programming (Callbacks, Promises, Async-Await).md",
-    "refined notes/04 - JavaScript/04 - Execution Model (Call Stack, Event Loop).md",
     "Pasted image 20250912010046.png",
     "Pasted image 20250911010038.png",
     "Nesting of a grid.png",
